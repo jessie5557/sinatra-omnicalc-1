@@ -45,7 +45,7 @@ get("/random/results") do
   @the_max_num = params.fetch("users_max_number").to_i
   @the_result = rand(@the_min_num..@the_max_num)
 
-  erb(:square_root_results)
+  erb(:random_results)
 end
 
 #payment
